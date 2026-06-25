@@ -1,0 +1,36 @@
+.card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  background: white;
+  cursor: pointer;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.04);
+  text-align: left;
+}
+
+.avatar {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #eff6ff;
+  font-size: 1.35rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.info strong {
+  font-size: 1rem;
+}
+
+.info small {
+  color: #64748b;
+}

@@ -1,0 +1,822 @@
+[
+  {
+    "id": 1,
+    "hanzi": "情况",
+    "pinyin": "qíngkuàng",
+    "indonesian": "kondisi, situasi",
+    "category": "General",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 2,
+    "hanzi": "科室",
+    "pinyin": "kēshì",
+    "indonesian": "seksi, divisi kecil",
+    "category": "Administration",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 3,
+    "hanzi": "分布",
+    "pinyin": "fēnbù",
+    "indonesian": "pembagian, distribusi",
+    "category": "General",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 4,
+    "hanzi": "商务采购",
+    "pinyin": "shāngwù cǎigòu",
+    "indonesian": "pengadaan bisnis",
+    "category": "Purchasing",
+    "level": "Intermediate",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 5,
+    "hanzi": "五金",
+    "pinyin": "wǔjīn",
+    "indonesian": "hardware, perlengkapan logam",
+    "category": "General",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 6,
+    "hanzi": "备件",
+    "pinyin": "bèijiàn",
+    "indonesian": "suku cadang (spare part)",
+    "category": "General",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 7,
+    "hanzi": "辅材",
+    "pinyin": "fǔcái",
+    "indonesian": "material pendukung/consumable",
+    "category": "General",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 8,
+    "hanzi": "采购",
+    "pinyin": "cǎigòu",
+    "indonesian": "pengadaan, pembelian",
+    "category": "Purchasing",
+    "level": "Intermediate",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 9,
+    "hanzi": "管理",
+    "pinyin": "guǎnlǐ",
+    "indonesian": "pengelolaan, manajemen",
+    "category": "Administration",
+    "level": "Advanced",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 12,
+    "hanzi": "基建",
+    "pinyin": "jījiàn",
+    "indonesian": "infrastruktur, konstruksi dasar",
+    "category": "General",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 14,
+    "hanzi": "绿植",
+    "pinyin": "lǜzhí",
+    "indonesian": "tanaman hijau/tanaman hias",
+    "category": "General",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 18,
+    "hanzi": "工业材料",
+    "pinyin": "gōngyè cáiliào",
+    "indonesian": "material industri",
+    "category": "General",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 19,
+    "hanzi": "配件",
+    "pinyin": "pèijiàn",
+    "indonesian": "komponen, suku cadang",
+    "category": "General",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 20,
+    "hanzi": "后勤",
+    "pinyin": "hòuqín",
+    "indonesian": "logistik, dukungan operasional",
+    "category": "General",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 21,
+    "hanzi": "劳保",
+    "pinyin": "láobǎo",
+    "indonesian": "perlindungan tenaga kerja (APD)",
+    "category": "Human Resource",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 24,
+    "hanzi": "办公",
+    "pinyin": "bàngōng",
+    "indonesian": "perkantoran",
+    "category": "Administration",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 25,
+    "hanzi": "行政",
+    "pinyin": "xíngzhèng",
+    "indonesian": "administrasi",
+    "category": "Administration",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 26,
+    "hanzi": "执行",
+    "pinyin": "zhíxíng",
+    "indonesian": "pelaksanaan, eksekusi",
+    "category": "Administration",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 27,
+    "hanzi": "交付",
+    "pinyin": "jiāofù",
+    "indonesian": "penyerahan, delivery",
+    "category": "General",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 28,
+    "hanzi": "跟踪",
+    "pinyin": "gēnzōng",
+    "indonesian": "pemantauan, tracking",
+    "category": "General",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 29,
+    "hanzi": "数据管理",
+    "pinyin": "shùjù guǎnlǐ",
+    "indonesian": "manajemen data",
+    "category": "Administration",
+    "level": "Advanced",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 30,
+    "hanzi": "供应商",
+    "pinyin": "gōngyìngshāng",
+    "indonesian": "pemasok (supplier)",
+    "category": "Purchasing",
+    "level": "Intermediate",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 31,
+    "hanzi": "风险评估",
+    "pinyin": "fēngxiǎn pínggū",
+    "indonesian": "evaluasi/penilaian risiko",
+    "category": "General",
+    "level": "Advanced",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 32,
+    "hanzi": "辅材科",
+    "pinyin": "fǔcái kē",
+    "indonesian": "Seksi material pendukung",
+    "category": "General",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 33,
+    "hanzi": "工作分组",
+    "pinyin": "gōngzuò fēnzǔ",
+    "indonesian": "Pembagian kelompok kerja",
+    "category": "Administration",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 36,
+    "hanzi": "二氧化碳",
+    "pinyin": "èryǎnghuàtàn",
+    "indonesian": "Karbon dioksida (CO₂)",
+    "category": "General",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 40,
+    "hanzi": "熏蒸",
+    "pinyin": "xūnzhēng",
+    "indonesian": "Fumigasi",
+    "category": "General",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 45,
+    "hanzi": "美观绿植",
+    "pinyin": "měiguān lǜzhí",
+    "indonesian": "Tanaman penghijauan/dekoratif",
+    "category": "General",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 46,
+    "hanzi": "草坪",
+    "pinyin": "cǎopíng",
+    "indonesian": "Rumput",
+    "category": "General",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 47,
+    "hanzi": "假花草",
+    "pinyin": "jiǎ huācǎo",
+    "indonesian": "Tanaman bunga buatan",
+    "category": "General",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 48,
+    "hanzi": "围墙",
+    "pinyin": "wéiqiáng",
+    "indonesian": "Dinding/pagar",
+    "category": "General",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 51,
+    "hanzi": "泵送剂",
+    "pinyin": "bèngsòngjì",
+    "indonesian": "Pumping agent (aditif pompa beton)",
+    "category": "General",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 52,
+    "hanzi": "减水剂",
+    "pinyin": "jiǎnshuǐjì",
+    "indonesian": "Water reducing agent (superplasticizer)",
+    "category": "General",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 54,
+    "hanzi": "灌浆料",
+    "pinyin": "guànjiāngliào",
+    "indonesian": "Material grouting",
+    "category": "General",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 55,
+    "hanzi": "耐材",
+    "pinyin": "nàicái",
+    "indonesian": "Material tahan api (refractory)",
+    "category": "General",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 56,
+    "hanzi": "保护渣",
+    "pinyin": "bǎohùzhā",
+    "indonesian": "Slag pelindung",
+    "category": "General",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 57,
+    "hanzi": "隔热棉",
+    "pinyin": "gérèmián",
+    "indonesian": "Wol isolasi panas",
+    "category": "General",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 67,
+    "hanzi": "职能",
+    "pinyin": "zhínéng",
+    "indonesian": "Fungsi, tugas",
+    "category": "Human Resource",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 68,
+    "hanzi": "分工",
+    "pinyin": "fēngōng",
+    "indonesian": "Pembagian tugas",
+    "category": "General",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 69,
+    "hanzi": "采购员",
+    "pinyin": "cǎigòuyuán",
+    "indonesian": "Purchaser / Staf Pengadaan",
+    "category": "Purchasing",
+    "level": "Intermediate",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 70,
+    "hanzi": "执行员",
+    "pinyin": "zhíxíngyuán",
+    "indonesian": "Procurement Executor / Staf Pelaksana",
+    "category": "Administration",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 71,
+    "hanzi": "开发供应商",
+    "pinyin": "kāifā gōngyìngshāng",
+    "indonesian": "Mengembangkan/mencari supplier baru",
+    "category": "Purchasing",
+    "level": "Intermediate",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 72,
+    "hanzi": "询价",
+    "pinyin": "xúnjià",
+    "indonesian": "Meminta penawaran harga (RFQ)",
+    "category": "Purchasing",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 73,
+    "hanzi": "议价",
+    "pinyin": "yìjià",
+    "indonesian": "Negosiasi harga",
+    "category": "Purchasing",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 74,
+    "hanzi": "比价",
+    "pinyin": "bǐjià",
+    "indonesian": "Membandingkan harga",
+    "category": "Purchasing",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 75,
+    "hanzi": "定价",
+    "pinyin": "dìngjià",
+    "indonesian": "Menetapkan harga",
+    "category": "Finance",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 76,
+    "hanzi": "品质把控",
+    "pinyin": "pǐnzhì bǎkòng",
+    "indonesian": "Pengendalian kualitas",
+    "category": "General",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 77,
+    "hanzi": "跟进",
+    "pinyin": "gēnjìn",
+    "indonesian": "Menindaklanjuti / Follow up",
+    "category": "General",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 78,
+    "hanzi": "订单",
+    "pinyin": "dìngdān",
+    "indonesian": "Order / Purchase Order",
+    "category": "Purchasing",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 79,
+    "hanzi": "合同",
+    "pinyin": "hétóng",
+    "indonesian": "Kontrak",
+    "category": "Purchasing",
+    "level": "Advanced",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 80,
+    "hanzi": "编制",
+    "pinyin": "biānzhì",
+    "indonesian": "Menyusun / Menyiapkan",
+    "category": "General",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 84,
+    "hanzi": "验收",
+    "pinyin": "yànshōu",
+    "indonesian": "Pemeriksaan dan penerimaan barang",
+    "category": "General",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 85,
+    "hanzi": "实物",
+    "pinyin": "shíwù",
+    "indonesian": "Barang fisik",
+    "category": "General",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 86,
+    "hanzi": "核对",
+    "pinyin": "héduì",
+    "indonesian": "Mencocokkan / Verifikasi",
+    "category": "General",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 87,
+    "hanzi": "付款流程",
+    "pinyin": "fùkuǎn liúchéng",
+    "indonesian": "Proses pembayaran",
+    "category": "Purchasing",
+    "level": "Advanced",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 88,
+    "hanzi": "人员配置",
+    "pinyin": "rényuán pèizhì",
+    "indonesian": "Alokasi personel",
+    "category": "Human Resource",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 89,
+    "hanzi": "采购流程",
+    "pinyin": "cǎigòu liúchéng",
+    "indonesian": "Proses pengadaan",
+    "category": "Purchasing",
+    "level": "Advanced",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 90,
+    "hanzi": "采购申请单",
+    "pinyin": "cǎigòu shēnqǐngdān",
+    "indonesian": "Formulir Permintaan Pengadaan (Purchase Requisition/PR)",
+    "category": "Purchasing",
+    "level": "Intermediate",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 91,
+    "hanzi": "签字版本",
+    "pinyin": "qiānzì bǎnběn",
+    "indonesian": "Dokumen yang telah ditandatangani/disetujui",
+    "category": "Contract",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 92,
+    "hanzi": "登记",
+    "pinyin": "dēngjì",
+    "indonesian": "Mendaftarkan / input ke sistem",
+    "category": "Administration",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 93,
+    "hanzi": "采购负责人",
+    "pinyin": "cǎigòu fùzérén",
+    "indonesian": "Penanggung jawab pengadaan",
+    "category": "Purchasing",
+    "level": "Intermediate",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 94,
+    "hanzi": "领取任务",
+    "pinyin": "lǐngqǔ rènwu",
+    "indonesian": "Mengambil tugas",
+    "category": "General",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 95,
+    "hanzi": "强行分配",
+    "pinyin": "qiángxíng fēnpèi",
+    "indonesian": "Penugasan langsung oleh atasan",
+    "category": "General",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 96,
+    "hanzi": "比价审批",
+    "pinyin": "bǐjià shěnpī",
+    "indonesian": "Persetujuan hasil perbandingan harga",
+    "category": "Purchasing",
+    "level": "Advanced",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 98,
+    "hanzi": "编制合同",
+    "pinyin": "biānzhì hétóng",
+    "indonesian": "Menyusun kontrak",
+    "category": "Purchasing",
+    "level": "Advanced",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 99,
+    "hanzi": "复核",
+    "pinyin": "fùhé",
+    "indonesian": "Pemeriksaan ulang / review",
+    "category": "General",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 100,
+    "hanzi": "合同审批单",
+    "pinyin": "hétóng shěnpīdān",
+    "indonesian": "Formulir Persetujuan Kontrak",
+    "category": "Purchasing",
+    "level": "Advanced",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 101,
+    "hanzi": "资金审批单",
+    "pinyin": "zījīn shěnpīdān",
+    "indonesian": "Formulir Persetujuan Pembayaran",
+    "category": "Purchasing",
+    "level": "Advanced",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 102,
+    "hanzi": "税票",
+    "pinyin": "shuìpiào",
+    "indonesian": "Faktur pajak",
+    "category": "Purchasing",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 103,
+    "hanzi": "水单",
+    "pinyin": "shuǐdān",
+    "indonesian": "Bukti transfer pembayaran (bank remittance slip)",
+    "category": "General",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 104,
+    "hanzi": "回执",
+    "pinyin": "huízhí",
+    "indonesian": "Salinan/konfirmasi yang dikembalikan",
+    "category": "General",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 105,
+    "hanzi": "资质",
+    "pinyin": "zīzhì",
+    "indonesian": "Kualifikasi",
+    "category": "General",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 106,
+    "hanzi": "要求",
+    "pinyin": "yāoqiú",
+    "indonesian": "Persyaratan",
+    "category": "General",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 107,
+    "hanzi": "个体户",
+    "pinyin": "gètǐhù",
+    "indonesian": "Usaha perorangan",
+    "category": "General",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 108,
+    "hanzi": "身份证",
+    "pinyin": "shēnfènzhèng",
+    "indonesian": "KTP",
+    "category": "General",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 109,
+    "hanzi": "纳税卡号",
+    "pinyin": "nàshuì kǎhào",
+    "indonesian": "Nomor NPWP",
+    "category": "Purchasing",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 110,
+    "hanzi": "营业执照",
+    "pinyin": "yíngyè zhízhào",
+    "indonesian": "Izin usaha",
+    "category": "General",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 111,
+    "hanzi": "纳税人",
+    "pinyin": "nàshuìrén",
+    "indonesian": "Wajib pajak",
+    "category": "Purchasing",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 112,
+    "hanzi": "税务登记证",
+    "pinyin": "shuìwù dēngjìzhèng",
+    "indonesian": "Sertifikat registrasi pajak",
+    "category": "Purchasing",
+    "level": "Advanced",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 113,
+    "hanzi": "法人",
+    "pinyin": "fǎrén",
+    "indonesian": "Badan hukum / Wakil hukum perusahaan",
+    "category": "General",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 114,
+    "hanzi": "授权委托书",
+    "pinyin": "shòuquán wěituōshū",
+    "indonesian": "Surat kuasa",
+    "category": "General",
+    "level": "Advanced",
+    "favorite": false,
+    "mastered": false
+  },
+  {
+    "id": 115,
+    "hanzi": "考察",
+    "pinyin": "kǎochá",
+    "indonesian": "Survei / Assessment / Site visit",
+    "category": "General",
+    "level": "Beginner",
+    "favorite": false,
+    "mastered": false
+  }
+]

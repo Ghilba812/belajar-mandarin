@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(160deg, #eef2ff 0%, #f8f9ff 60%, #ffffff 100%);
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.app-shell {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(160deg, #eef2ff 0%, #f8f9ff 60%, #ffffff 100%);
+  color: #212529;
+}
+
+.app-header {
+  width: 100%;
+}
+
+.app-header > div {
+  max-width: 680px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.app-header button {
+  flex-shrink: 0;
+}
+
+.app-content {
+  width: min(100%, 680px);
+  margin: 0 auto;
+  padding: 20px 16px 36px;
+}
+
+.app-card {
+  overflow-wrap: anywhere;
+}
+
+.filter-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filter-row button {
+  min-width: fit-content;
+}
+
+.mode-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mode-card {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.mode-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 24px rgba(59, 91, 219, 0.12);
+}
+
+.mode-card .mode-icon {
+  flex-shrink: 0;
+}
+
+.mode-card > div:last-child {
+  min-width: 0;
+}
+
+.stats-grid {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  flex: 1 1 140px;
+  min-width: 0;
+}
+
+.exercise-shell {
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.exercise-shell .action-row {
+  width: 100%;
+}
+
+.exercise-shell .action-row > button {
+  flex: 1 1 140px;
+}
+
+@media (max-width: 768px) {
+  .app-content {
+    padding: 16px 12px 28px;
+  }
+
+  .app-card {
+    padding: 16px 18px;
+  }
+
+  .mode-card {
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .mode-icon {
+    width: 46px !important;
+    height: 46px !important;
+    font-size: 22px !important;
+  }
+
+  .stats-grid {
+    flex-direction: column;
+  }
+
+  .filter-row button {
+    flex: 1 1 calc(50% - 8px);
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-content {
+    padding: 12px 10px 24px;
+  }
+
+  .app-card {
+    padding: 14px 14px;
+  }
+
+  .mode-card {
+    align-items: flex-start;
+  }
+
+  .mode-icon {
+    width: 42px !important;
+    height: 42px !important;
+    font-size: 20px !important;
+  }
+
+  .mode-title {
+    font-size: 15px !important;
+  }
+
+  .mode-desc {
+    font-size: 12px !important;
+  }
+
+  .filter-row button {
+    flex: 1 1 100%;
+  }
+
+  .exercise-shell .action-row {
+    flex-direction: column;
+  }
+
+  .exercise-shell .action-row > button {
+    width: 100%;
+  }
+}
