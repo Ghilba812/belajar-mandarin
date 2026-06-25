@@ -18,5 +18,14 @@ export function saveProgress(progress) {
     return;
   }
 
-  window.localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
+  const existing = readStoredProgress();
+  window.localStorage.setItem(STORAGE_KEY, JSON.stringify({ ...existing, ...progress }));
+}
+
+export function clearStoredProgress() {
+  if (typeof window === 'undefined') {
+    return;
+  }
+
+  window.localStorage.removeItem(STORAGE_KEY);
 }

@@ -5,15 +5,21 @@ import { QuizMode } from '../components/QuizMode';
 import { TypingMode } from '../components/TypingMode';
 import { VocabularyList } from '../components/VocabularyList';
 import { useUser } from '../hooks/useUser';
+import { readStoredProgress, saveProgress } from '../utils/storage';
 import styles from '../styles/StudyPage.module.css';
 
 export function StudyPage({ onBack }) {
   const { selectedUser, vocabulary, favorites, mastered, toggleFavorite, toggleMastered, selectedMode, setSelectedMode } = useUser();
-  const [category, setCategory] = useState('All');
+  const [category, setCategory] = useState(() => readStoredProgress().lastCategory || 'All');
 
   useEffect(() => {
-    setCategory('All');
+    const storedCategory = readStoredProgress().lastCategory || 'All';
+    setCategory(storedCategory);
   }, [selectedUser?.id]);
+
+  useEffect(() => {
+    saveProgress({ lastCategory: category });
+  }, [category]);
 
   const categories = useMemo(() => ['All', ...new Set(vocabulary.map((item) => item.category))], [vocabulary]);
 
@@ -72,7 +78,7 @@ export function StudyPage({ onBack }) {
           <p className={styles.eyebrow}>Profil aktif</p>
           <h1>{selectedUser?.avatar} {selectedUser?.name}</h1>
         </div>
-        <button className={styles.backButton} onClick={onBack}>
+        <button className={styles.backButton} onClick={onBack} type="button">
           Ganti profil
         </button>
       </div>
@@ -85,6 +91,7 @@ export function StudyPage({ onBack }) {
             key={item}
             className={`${styles.filterButton} ${category === item ? styles.active : ''}`}
             onClick={() => setCategory(item)}
+            type="button"
           >
             {item}
           </button>
