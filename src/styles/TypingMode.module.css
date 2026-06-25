@@ -4,14 +4,15 @@
   gap: 14px;
 }
 
-.topBar {
+.bottomBar {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
   color: var(--muted);
+  justify-content: center;
 }
 
-.topBar span {
+.bottomBar span {
   padding: 6px 10px;
   border-radius: 999px;
   background: var(--card);
@@ -72,10 +73,39 @@
   color: var(--text);
 }
 
+.actionStack {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .actions {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
+}
+
+.footerActions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.iconButton {
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--card);
+  color: var(--muted);
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.iconActive {
+  background: var(--primary-soft);
+  color: #f59e0b;
+  border-color: #f59e0b;
 }
 
 .primary,
@@ -96,6 +126,10 @@
   background: var(--card);
   color: var(--text);
   border: 1px solid var(--border);
+}
+
+.secondary:hover {
+  background: var(--primary-soft);
 }
 
 .feedback {

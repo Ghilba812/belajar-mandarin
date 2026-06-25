@@ -13,7 +13,13 @@ function AppContent() {
   const [importMessage, setImportMessage] = useState('');
   const [targetProfileId, setTargetProfileId] = useState(() => readStoredProgress().lastImportProfile || 'feiza');
   const { theme, toggleTheme } = useTheme();
-  const { profiles, selectedUser, favorites, mastered, selectedMode, importVocabulary } = useUser();
+  const { profiles, selectedUser, favorites, mastered, selectedMode, setSelectedMode, selectUser, importVocabulary } = useUser();
+  const studyModes = [
+    { id: 'flashcard', label: 'Flashcard' },
+    { id: 'typing', label: 'Typing' },
+    { id: 'quiz', label: 'Quiz' },
+    { id: 'vocab', label: 'Daftar Kata' },
+  ];
 
   useEffect(() => {
     saveProgress({ lastView: view });
@@ -83,58 +89,101 @@ function AppContent() {
             <span className={styles.progressChip}>{progressSummary}</span>
             <button
               className={styles.iconButton}
-              onClick={toggleTheme}
+              onClick={() => setSettingsOpen((value) => !value)}
               type="button"
-              aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`}
+              aria-label="Open settings"
             >
-              {theme === 'dark' ? '☀️' : '🌙'}
+              ☰ Menu
             </button>
-            <div className={styles.settingsWrap}>
-              <button
-                className={styles.iconButton}
-                onClick={() => setSettingsOpen((value) => !value)}
-                type="button"
-                aria-label="Open settings"
-              >
-                ⚙️
-              </button>
-              {settingsOpen ? (
-                <div className={styles.settingsMenu}>
-                  <div className={styles.importPanel}>
-                    <label className={styles.importLabel} htmlFor="import-profile-select">
-                      <span>Target upload</span>
-                      <select
-                        id="import-profile-select"
-                        className={styles.importSelect}
-                        value={targetProfileId}
-                        onChange={(event) => setTargetProfileId(event.target.value)}
-                      >
-                        {profiles.map((profile) => (
-                          <option key={profile.id} value={profile.id}>
-                            {profile.name}
-                          </option>
-                        ))}
-                      </select>
-                    </label>
-                    <label className={styles.importLabel} htmlFor="vocabulary-upload">
-                      <span>Upload kosa kata</span>
-                      <input id="vocabulary-upload" className={styles.importInput} type="file" accept=".txt,.json" onChange={handleVocabularyUpload} />
-                    </label>
-                    <p className={styles.importHint}>Format: hanzi|pinyin|indonesian|category|level</p>
-                    <p className={styles.importExample}>Contoh: 学习|xuéxí|belajar|Daily|Beginner</p>
-                    <a className={styles.importLink} href="/sample-vocabulary.txt" download>
-                      Unduh contoh format
-                    </a>
-                    {importMessage ? <p className={styles.importStatus}>{importMessage}</p> : null}
-                  </div>
-                  <button className={styles.resetButton} onClick={handleResetProgress} type="button">
-                    Reset Progress
-                  </button>
-                </div>
-              ) : null}
-            </div>
           </div>
         </header>
+
+        {settingsOpen ? (
+          <>
+            <button className={styles.overlay} onClick={() => setSettingsOpen(false)} type="button" aria-label="Close menu" />
+            <aside className={styles.drawer} role="dialog" aria-label="Settings menu">
+              <div className={styles.drawerHeader}>
+                <strong>Menu</strong>
+                <button className={styles.closeButton} onClick={() => setSettingsOpen(false)} type="button" aria-label="Close menu">
+                  ✕
+                </button>
+              </div>
+
+              <button className={styles.drawerAction} onClick={toggleTheme} type="button">
+                {theme === 'dark' ? '☀️ Ganti ke tema terang' : '🌙 Ganti ke tema gelap'}
+              </button>
+
+              <div className={styles.drawerSection}>
+                <label className={styles.importLabel} htmlFor="profile-select">
+                  <span>Profil</span>
+                  <select
+                    id="profile-select"
+                    className={styles.importSelect}
+                    value={selectedUser?.id || ''}
+                    onChange={(event) => {
+                      selectUser(event.target.value);
+                      setView('study');
+                    }}
+                  >
+                    {profiles.map((profile) => (
+                      <option key={profile.id} value={profile.id}>
+                        {profile.name}
+                      </option>
+                    ))}
+                  </select>
+                </label>
+              </div>
+
+              <div className={styles.drawerSection}>
+                <p className={styles.drawerSectionTitle}>Mode belajar</p>
+                <div className={styles.modeGrid}>
+                  {studyModes.map((mode) => (
+                    <button
+                      key={mode.id}
+                      className={`${styles.modeButton} ${selectedMode === mode.id ? styles.modeButtonActive : ''}`}
+                      onClick={() => setSelectedMode(mode.id)}
+                      type="button"
+                    >
+                      {mode.label}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              <div className={styles.importPanel}>
+                <label className={styles.importLabel} htmlFor="import-profile-select">
+                  <span>Target upload</span>
+                  <select
+                    id="import-profile-select"
+                    className={styles.importSelect}
+                    value={targetProfileId}
+                    onChange={(event) => setTargetProfileId(event.target.value)}
+                  >
+                    {profiles.map((profile) => (
+                      <option key={profile.id} value={profile.id}>
+                        {profile.name}
+                      </option>
+                    ))}
+                  </select>
+                </label>
+                <label className={styles.importLabel} htmlFor="vocabulary-upload">
+                  <span>Upload kosa kata</span>
+                  <input id="vocabulary-upload" className={styles.importInput} type="file" accept=".txt,.json" onChange={handleVocabularyUpload} />
+                </label>
+                <p className={styles.importHint}>Format: hanzi|pinyin|indonesian|category|level</p>
+                <p className={styles.importExample}>Contoh: 学习|xuéxí|belajar|Daily|Beginner</p>
+                <a className={styles.importLink} href="/sample-vocabulary.txt" download>
+                  Unduh contoh format
+                </a>
+                {importMessage ? <p className={styles.importStatus}>{importMessage}</p> : null}
+              </div>
+
+              <button className={styles.resetButton} onClick={handleResetProgress} type="button">
+                Reset Progress
+              </button>
+            </aside>
+          </>
+        ) : null}
 
         {view === 'home' ? <HomePage onSelectUser={() => setView('study')} /> : <StudyPage onBack={() => setView('home')} />}
       </div>

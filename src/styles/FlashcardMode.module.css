@@ -77,6 +77,30 @@
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footerActions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.iconButton {
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--card);
+  color: var(--muted);
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.iconActive {
+  background: var(--primary-soft);
+  color: #f59e0b;
+  border-color: #f59e0b;
 }
 
 .primary,
